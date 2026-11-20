@@ -1,8 +1,19 @@
 #include <iostream>
 
 
+
+struct  Habit {
+    std::string name;
+    int streak;
+};
+
+
 int main(){
-    std::cout << "Hello, world!" << std::endl;
+    Habit myHabit;
+    myHabit.name = "Exercise";
+    myHabit.streak = 0;
+    
+    std::cout << "Habit: " << myHabit.name << ", Streak: " << myHabit.streak << std::endl;
     return 0;
 }
 
